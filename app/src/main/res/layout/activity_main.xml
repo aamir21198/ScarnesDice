@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darukhanawalla.aamir.scarnesdice.MainActivity"
+    android:background="#59bbe6">
+
+    <TextView
+        android:id="@+id/yscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score:  0"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/cscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="Computer Score:  0"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Turn Score:  0"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:elevation="8dp"
+        android:src="@drawable/dice5" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:background="#2679e6"
+        android:text="ROLL"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/roll"
+        android:layout_alignBottom="@+id/roll"
+        android:layout_centerHorizontal="true"
+        android:background="#2679e6"
+        android:text="HOLD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/hold"
+        android:layout_alignBottom="@+id/hold"
+        android:layout_alignParentEnd="true"
+        android:background="#2679e6"
+        android:text="RESET"
+        android:textSize="20sp" />
+
+</RelativeLayout>
